@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(10px + 0.390625vw);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    margin-left: 15%;
+}
+
+.content {
+    width: 80vw;
+    max-width: 1200px;
+    max-height: 95vh;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.description {
+    width: 350px;
+    height: 80px !important;
+    resize: horizontal;
+    overflow-y: auto;
+}
+
+.imagebutton {
+    box-sizing: content-box;
+    display: inline-block;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    border: 2px solid #d3d3d3;
+    padding: 5px;
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+}
+
+.cabin, .submit, .description, .actionType, .newCabinType, .night, .week, .inclusions, .image {
+    margin-bottom: 20px !important;
+    padding: 10px;
+}
+
+.content label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    border-radius: 50px;
+    border: 2px solid #d3d3d3;
+    cursor: pointer;
+    background: white;
+}
+
+.submit:hover, .imagebutton:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 900px) {
+    
+    .content {
+        padding: 15px;
+    }
+    
+    .submit {
+        width: 150px;
+        height: 40px;
+    }
+
+    header img {
+        display: none;
+    }
+}
